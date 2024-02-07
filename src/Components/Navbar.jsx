@@ -3,6 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "react-bootstrap-icons";
 import { Search, BellFill } from "react-bootstrap-icons";
+import { Link } from "react-router-dom";
 
 function NavbarHomepage() {
   return (
@@ -22,9 +23,9 @@ function NavbarHomepage() {
         >
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link" className="text-white">
-              Tv Shows
-            </Nav.Link>
+            <Link className="nav-link" to="/tv-shows">
+              Tv-Shows
+            </Link>
             <Nav.Link href="#link">Movies</Nav.Link>
             <Nav.Link href="#link">Recently Added</Nav.Link>
             <Nav.Link href="#link">My List</Nav.Link>

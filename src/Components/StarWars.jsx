@@ -35,7 +35,7 @@ class StarWars extends Component {
     return (
       <Container fluid className="bg-black my-3">
         <Row className="gy-3 ">
-          <h3 className="text-white">Star Wars</h3>
+          <h5 className="text-white mb-0">Star Wars</h5>
           {this.state.films.slice(0, 6).map((film) => {
             console.log("Film:", film);
             return (
